@@ -1,53 +1,49 @@
 /*jshint node:true*/
 module.exports = {
-  scenarios: [
+  "command": "ember test",
+  "scenarios": [
     {
-      name: 'default',
-      bower: {
-        dependencies: { }
+      "name": "default",
+      "bower": {
+        "dependencies": {}
       }
     },
     {
-      name: 'ember-1.13',
-      bower: {
-        dependencies: {
-          'ember': '~1.13.0'
+      "name": "ember-release",
+      "bower": {
+        "dependencies": {
+          "ember": "components/ember#release",
+          "ember-data": "components/ember-data#release"
         },
-        resolutions: {
-          'ember': '~1.13.0'
+        "resolutions": {
+          "ember": "release",
+          "ember-data": "release"
         }
       }
     },
     {
-      name: 'ember-release',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#release'
+      "name": "ember-beta",
+      "bower": {
+        "dependencies": {
+          "ember": "components/ember#beta",
+          "ember-data": "components/ember-data#beta"
         },
-        resolutions: {
-          'ember': 'release'
+        "resolutions": {
+          "ember": "beta",
+          "ember-data": "beta"
         }
       }
     },
     {
-      name: 'ember-beta',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#beta'
+      "name": "ember-canary",
+      "bower": {
+        "dependencies": {
+          "ember": "components/ember#canary",
+          "ember-data": "components/ember-data#canary"
         },
-        resolutions: {
-          'ember': 'beta'
-        }
-      }
-    },
-    {
-      name: 'ember-canary',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#canary'
-        },
-        resolutions: {
-          'ember': 'canary'
+        "resolutions": {
+          "ember": "canary",
+          "ember-data": "canary"
         }
       }
     }
