@@ -21,6 +21,12 @@ ember install ember-element-resize-detector
 
 - ### [Changelog](CHANGELOG.md)
 
+## Nested Addons (or using this addon inside of an addon)
+
+To use this addon as a dependency of another addon, you must specify this addon as a peerDependency of your addon.
+This will cause the host app that's installing your addon to also install this addon in the root node_modules.
+For more formation, read comment in [ember-tether library](https://github.com/yapplabs/ember-tether#using-ember-tether-in-your-own-addon).
+
 ## Looking for help?
 If it is a bug [please open an issue on GitHub](http://github.com/EmberSherpa/ember-element-resize-detector/issues).
 
