@@ -1,0 +1,20 @@
+<h1>ember-element-resize-detector</h1>
+
+<p>
+  Browsers allow us to bind to the resize event on the window but we're not able to do the same with DOM elements.
+  This addon provides the mechanism that allows you to efficiently monitor a DOM element and send an action when the size changes.
+</p>
+
+<h2>Parent changes sizes</h2>
+
+<p>
+  One common use case that's typically difficult is to send an action when a component's parent changes sizes.
+</p>
+
+{{#resizable-container width=100 height=100}}
+  {{resize-detector '#fill' on-resize=(action 'resize')}}
+  <div id="fill"></div>
+{{/resizable-container}}
+
+{{ember-notify}}
+

@@ -1,0 +1,10 @@
+  <label class="width">
+    <input type="range" value={{width}} min="0" max="600" oninput={{action (mut width) value="target.value"}}>
+  </label>
+  <label class="height">
+    <input type="range" orient="vertical" value={{height}} min="0" max="600" oninput={{action (mut height) value="target.value"}}>
+  </label>
+
+  <div style={{style}}>
+    {{yield}}
+  </div>

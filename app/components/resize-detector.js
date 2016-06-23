@@ -1,0 +1,1 @@
+export { default } from 'ember-element-resize-detector/components/resize-detector';
