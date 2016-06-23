@@ -1,0 +1,14 @@
+{
+    "project": {
+        "name": "ember-element-resize-detector",
+        "description": "The default blueprint for ember-cli addons.",
+        "url": "http://github.com/Taras Mankovski/ember-element-resize-detector",
+        "version": "v0.1.0"
+    },
+    "files": {},
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [],
+    "warnings": []
+}
