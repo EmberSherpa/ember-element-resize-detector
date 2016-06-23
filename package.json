@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Taras Mankovski/ember-element-resize-detector.git"
+    "url": "https://github.com/EmberSherpa/ember-element-resize-detector"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "Taras Mankovski <tarasm@gmail.com>",
+  "author": "Taras Mankovski <taras@embersherpa.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -55,6 +55,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://Taras Mankovski.github.io/ember-element-resize-detector"
+    "demoURL": "http://embersherpa.github.io/ember-element-resize-detector"
   }
 }
