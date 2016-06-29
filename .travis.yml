@@ -34,6 +34,6 @@ addons:
     packages:
       - google-chrome-stable
   code_climate:
-    repo_token: <CODE_CLIMATE_TOKEN_GOES_HERE>
+    repo_token: cd4864af0d8f2a752bbb1013ccce2ad45df17162a0068a23a746bbdb8b568af3
 after_script:
   - codeclimate-test-reporter < lcov.dat
