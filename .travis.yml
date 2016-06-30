@@ -25,6 +25,9 @@ before_install:
 install:
   - npm install
   - bower install
+before_script:
+ - git config --global user.email "taras@embersherpa.com"
+ - git config --global user.name "Robots"
 script:
   - ember try $EMBER_TRY_SCENARIO test --skip-cleanup
 dist: trusty
