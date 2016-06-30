@@ -26,7 +26,7 @@ install:
   - npm install
   - bower install
 script:
-  - 'ember try:one $EMBER_TRY_SCENARIO --- ember test'
+  - ember try $EMBER_TRY_SCENARIO test --skip-cleanup
 dist: trusty
 addons:
   apt:
