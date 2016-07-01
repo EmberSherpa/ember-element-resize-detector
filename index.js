@@ -21,7 +21,7 @@ module.exports = {
     }
   },
 
-  treeForVendor(tree) {
+  treeForVendor: function(tree) {
     var trees = [];
 
     if (tree) {
