@@ -22,6 +22,12 @@ module.exports = {
   },
 
   treeForVendor(tree) {
+    var trees = [];
+
+    if (tree) {
+      trees.push(tree);
+    }
+
     var erdSrc = dirname(require.resolve('element-resize-detector'));
     var erdPath = resolve(join(erdSrc, '..', 'dist'));
     var erdTree = new Funnel(this.treeGenerator(erdPath), {
@@ -29,6 +35,9 @@ module.exports = {
       files: ['element-resize-detector.js'],
       destDir: 'element-resize-detector'
     });
-    return mergeTrees([tree, erdTree]);
+
+    trees.push(erdTree);
+
+    return mergeTrees(trees);
   }
 };
