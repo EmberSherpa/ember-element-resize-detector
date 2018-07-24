@@ -1,6 +1,6 @@
 /* jshint node:true */
 
-var runCommand = require('ember-addon-genie/lib/utils/run-command');
+var runCommand = require('../lib/run-command');
 
 module.exports = {
   init: function() {
