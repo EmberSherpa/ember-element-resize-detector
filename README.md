@@ -8,7 +8,8 @@
 ## Features
 
 
-## Installation
+Installation
+------------------------------------------------------------------------------
 
 ```
 ember install ember-element-resize-detector
