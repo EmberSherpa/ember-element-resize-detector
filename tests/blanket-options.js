@@ -1,4 +1,4 @@
-/* globals blanket, module */
+/* globals module */
 
 var options = {
   modulePrefix: '',
@@ -12,8 +12,4 @@ var options = {
   }
 };
 
-if (typeof exports === 'undefined') {
-  blanket.options(options);
-} else {
-  module.exports = options;
-}
+module.exports = options;
