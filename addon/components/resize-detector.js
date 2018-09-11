@@ -27,6 +27,9 @@ export default Ember.Component.extend({
   },
 
   onResize(element) {
+    if (this.get('isDestroyed') || this.get('isDestroying')) {
+      return;
+    }
     let $el = Ember.$(element);
     this.sendAction('on-resize', {
       width: $el.width(),
