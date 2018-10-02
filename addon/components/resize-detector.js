@@ -13,7 +13,7 @@ export default Ember.Component.extend({
 
   didInsertElement() {
     this._super(...arguments);
-    
+
     scheduleOnce('afterRender', this, this.setup);
   },
 
@@ -31,7 +31,7 @@ export default Ember.Component.extend({
       return;
     }
     let $el = Ember.$(element);
-    this.sendAction('on-resize', {
+    this.get('on-resize')({
       width: $el.width(),
       height: $el.height()
     }, element);
