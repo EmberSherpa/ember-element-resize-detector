@@ -30,10 +30,9 @@ export default Ember.Component.extend({
     if (this.get('isDestroyed') || this.get('isDestroying')) {
       return;
     }
-    let $el = Ember.$(element);
     this.get('on-resize')({
-      width: $el.width(),
-      height: $el.height()
+      width: element.offsetWidth,
+      height: element.offsetHeight
     }, element);
   },
 
