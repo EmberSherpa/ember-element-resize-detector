@@ -33,7 +33,7 @@ function getWidth(el) {
   let borderRightWidth = parseFloat(styles.borderRightWidth);
   let paddingLeft = parseFloat(styles.paddingLeft);
   let paddingRight = parseFloat(styles.paddingRight);
-  return height - borderLeftWidth - borderRightWidth - paddingRight - paddingLeft;
+  return width - borderLeftWidth - borderRightWidth - paddingRight - paddingLeft;
 }
 
 
